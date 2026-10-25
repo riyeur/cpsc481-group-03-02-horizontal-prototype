@@ -69,14 +69,24 @@
   padding: 0 25px;
 }
 
-.align-translate-search {
+.align-translate-search-reviews-page {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
   gap: 20px;
   padding-top: 25px;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.review-tags-by-search-bar {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+
+.review-tags-by-search-bar select {
+  width: 100px;
 }
 
 .upper-tabs-reviews {
@@ -232,17 +242,17 @@
   border-bottom: 2px solid #7c7c7c;
 }
 
-.anime-select, .season-select, .episode-select {
+.anime-select-reviews-page, .season-select-reviews-page, .episode-select-reviews-page, .genre-select-reviews-page, .age-group-select-reviews-page, .demographic-select-reviews-page, .rating-select-reviews-page {
   background-color: #FFFFFF;
   border: 1px solid #767575;
   color: #4f4e4e;
   border-radius: 13px;
-  padding: 7px 1px;
+  padding: 7px 0;
   font-size: 11px;
   cursor: pointer;
 }
 
-.anime-select:disabled {
+.anime-select-reviews-page:disabled {
   background-color: #EAEAEA;
   color: #999999;
   border-color: #CCCCCC;
