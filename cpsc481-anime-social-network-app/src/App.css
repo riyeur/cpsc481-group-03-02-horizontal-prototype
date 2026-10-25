@@ -3,33 +3,83 @@
   right: 0;
   top: 0;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  background-color: #ffffff;
+  border-left: 1px solid #767575;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.vertical-bar-button {
+  background-color: #FFFFFF;
+  border: 1px solid #767575;
+  border-radius: 13px;
+  padding: 10px 13px;
+  font-size: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.vertical-bar-button:hover {
+  background-color: #f5f5f5;
 }
 
 .main-page {
-  padding-right: 330px;
+  padding-right: 190px;
+  padding-bottom: 113px;
 }
 
 .main-sections {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 17px;
+  margin-top: 30px;
 }
 
 .bottom-sections {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
+  gap: 13px;
+  padding: 15px 0;
+}
+
+.bottom-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-top: 1px solid #a5a5a5;
+  padding: 19px 0;
+  padding-bottom: 23px;
+  z-index: 10;
 }
 
 .posts-and-reviews {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  column-gap: 35px;
+  justify-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 .align-translate-search {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  padding-top: 25px;
 }
 
 .upper-tabs {
@@ -39,6 +89,35 @@
 
 .search-input {
   width: 50vw;
+  padding: 10px 15px;
+  border: 1px solid #6b6b6b;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  outline: none;
+}
+
+.translate-button {
+  background-color: #FFFFFF;
+  border: 1px solid #6b6b6b;
+  border-radius: 13px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.upper-tabs {
+  margin-bottom: 25px;
+}
+
+.upper-buttons {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 10px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #545454;
+  cursor: pointer;
 }
 
 .top-items {
@@ -59,7 +138,102 @@
 }
 
 .post-item, .review-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
+  border: 1px solid #595858;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.post-tags, .review-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+
+.post-tag, .review-tag {
+  background-color: #FFFFFF;
+  color: #545454;
+  border: 1px solid #545454;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.post-list, .review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.upper-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #a5a5a5;
+  padding-bottom: 10px;
+}
+
+.post-title, .review-title {
+  font-size: 18px;
+  color: #656565;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.post-content, .review-content {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 5px 0 15px;
+}
+
+.likes-and-comments {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #353535;
+  margin-top: auto;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+.post-username, .review-username {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.date-posted {
+  font-size: 13px;
+  color: #4f4e4e;
+}
+
+.read-review-button {
+  background-color: #FFFFFF;
+  border: 1px solid #4f4e4e;
+  color: #4f4e4e;
+  border-radius: 12px;
+  padding: 7px 13px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 17px;
+}
+
+.create-post-button, .create-review-button {
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+  color: #4f4e4e;
+  border-radius: 14px;
+  padding: 11px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.review-rating {
+  border: 1px solid #999999;
+  padding: 5px 7px;
+  border-radius: 10px;
 }

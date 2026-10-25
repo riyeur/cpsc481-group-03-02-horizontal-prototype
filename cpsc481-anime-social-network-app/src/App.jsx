@@ -5,7 +5,7 @@ const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numbe
   return (
     <div className='post-item'>
       <div className='top-items'>
-        <img src={profilePicture} alt={username} className='post-profile-picture' height="70" width="auto" />
+        <img src={profilePicture} alt={username} className='post-profile-picture' height="60" width="auto" />
         <text className='post-username'>{username}</text>
         <p className='date-posted'>{datePosted}</p>
       </div>
@@ -16,8 +16,10 @@ const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numbe
       </div>
       <p className='post-title'>{title}</p>
       <p className='post-content'>{content}</p>
-      <p>❤︎ ⁠{numberOfLikes}</p>
-      <p>💬⁠{numberOfComments}</p>
+      <div className='likes-and-comments'>
+        <p>❤︎ {numberOfLikes}</p>
+        <p>🗨 ⁠{numberOfComments}</p>
+      </div>
     </div>
   )
 }
@@ -27,7 +29,7 @@ const Review = ({profilePicture, username, tag1, tag2, title, content, rating, n
   return (
     <div className='review-item'>
       <div className='top-items'>
-        <img src={profilePicture} alt={username} className='review-profile-picture' height="70" width="auto" />
+        <img src={profilePicture} alt={username} className='review-profile-picture' height="60" width="auto" />
         <text className='review-username'>{username}</text>
         <p className='date-posted'>{datePosted}</p>
       </div>
@@ -37,11 +39,13 @@ const Review = ({profilePicture, username, tag1, tag2, title, content, rating, n
       </div>
       <div className='review-title-rating'>
         <p className='review-title'>{title}</p>
-        <p>{rating}/10</p>
+        <p className='review-rating'>{rating}/10</p>
       </div>
       <p className='review-content'>{content}</p>
       <button className='read-review-button'>Read Review</button>
-      <p>❤︎⁠ {numberOfLikes}</p>
+      <div className='likes-and-comments'>
+        <p>❤︎⁠ {numberOfLikes}</p>
+      </div>
     </div>
   )
 }
@@ -55,13 +59,13 @@ function App() {
           <input type='text' placeholder='Search' className='search-input'/>
         </div>
         <div className='translate'>
-          <button>Translate</button>
+          <button className='translate-button'>Translate</button>
         </div>
       </div>
       <div className='upper-tabs'>
-        <button>All</button>
-        <button>Posts</button>
-        <button>Reviews and Recommendations</button>
+        <button className='upper-buttons'>All</button>
+        <button className='upper-buttons'>Posts</button>
+        <button className='upper-buttons'>Reviews and Recommendations</button>
       </div>
       <div className='posts-and-reviews'>
         <div className='post-list'>
@@ -84,7 +88,7 @@ function App() {
             tag2='Season 1'
             tag3='Episode 3'
             title='What is going on'
-            content='Lowkey confused why the main character is so OP. Hope it doesnt stay this way'
+            content='Lowkey confused why the main character is so OP. Hope it doesnt stay this way because its really annoying'
             numberOfLikes={3}
             numberOfComments={7}
             datePosted='2026-10-24'
@@ -97,7 +101,7 @@ function App() {
           tag1='Attack on Titan'
           tag2='Season 3'
           title='This was so good!'
-          content='I finally got around to continuing Attack on Titan after watching the first two seasons a year ago. I have to say, this season went above and beyond my expectations. The season was filled with...'
+          content='I finally got around to continuing Attack on Titan after watching the first two seasons a year ago. I have to say, this season went above and beyond my expectations. The season was filled with so many suprises and the character development was...'
           rating={9}
           numberOfLikes={13}
           datePosted='2026-10-24'
@@ -114,6 +118,10 @@ function App() {
           datePosted='2026-10-24'
           />
         </div>
+      </div>
+      <div className='bottom-buttons'>
+        <button className='create-post-button'>Create Post</button>
+        <button className='create-review-button'>Create Review</button>
       </div>
     </div>
   )
