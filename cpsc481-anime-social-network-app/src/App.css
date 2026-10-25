@@ -1,0 +1,65 @@
+.vertical-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.main-page {
+  padding-right: 330px;
+}
+
+.main-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-and-reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.align-translate-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.upper-tabs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-input {
+  width: 50vw;
+}
+
+.top-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-items p {
+  margin-left: auto;
+}
+
+.review-title-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-item, .review-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
