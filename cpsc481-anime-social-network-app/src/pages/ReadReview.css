@@ -1,0 +1,224 @@
+
+.main-read-review-page {
+    padding-right: 190px;
+}
+
+.read-review-page {
+    max-width: 1110px;
+    margin: 25px auto;
+    padding: 0 25px;
+}
+
+.full-review-section {
+    border: 1px solid #767575;
+    border-radius: 10px 10px 0 0;
+    padding: 25px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.posted-date-for-review {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 12px;
+    color: #656565;
+}
+
+.review-top-section {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.review-left-section {
+    width: 40%;
+    flex-shrink: 0;
+}
+
+.review-main-picture {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border: 1px solid #767575;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.review-right-section {
+    flex: 1;
+    padding-top: 35px;
+}
+
+.posted-review-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #545454;
+    margin: 0 0 15px;
+}
+
+.posted-review-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.posted-review-anime-tag, .posted-review-season-tag {
+    background-color: #FFFFFF;
+    border: 1px solid #767575;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 12px;
+    color: #545454;
+}
+
+.posted-review-rating {
+    display: table;
+    border: 1px solid #767575;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #545454;
+    margin: 20px 0;
+}
+
+.posted-review-views-and-likes {
+    font-size: 13px;
+    color: #656565;
+    margin-bottom: 20px;
+}
+
+.posted-review-views-and-likes p {
+    margin: 8px 0;
+}
+
+.posted-review-like-button {
+    background-color: #FFFFFF;
+    border: 1px solid #767575;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: #545454;
+    font-size: 14px;
+}
+
+.review-poster-username {
+    font-size: 17px;
+    font-weight: 600;
+    color: #656565;
+    margin: 15px 0 20px;
+}
+
+.posted-review-introduction-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #545454;
+    margin-bottom: 10px;
+}
+
+.posted-review-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #656565;
+    margin: 5px 0;
+}
+
+.posted-review-comment-section {
+    border: 1px solid #767575;
+    border-top: none;
+    padding: 20px 25px 0;
+    background-color: #FFFFFF;
+}
+
+.comment-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #545454;
+    margin: 0 0 15px;
+}
+
+.available-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment-item {
+    border: 1px solid #999999;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.comment-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-username {
+    font-size: 14px;
+    font-weight: 600;
+    color: #545454;
+    margin: 0;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #656565;
+    margin: 0;
+}
+
+.comment-content {
+    font-size: 14px;
+    color: #656565;
+    margin: 10px 0 0;
+}
+
+.comment-edit-and-delete {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.comment-edit-and-delete button {
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #545454;
+}
+
+.posted-review-write-comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 25px 20px;
+    border: 1px solid #767575;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #FFFFFF;
+}
+
+.posted-review-write-comment-section textarea {
+    width: 100%;
+    min-height: 90px;
+    padding: 12px;
+    border: 1px solid #767575;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.posted-review-write-comment-section button {
+    align-self: flex-end;
+    background-color: #FFFFFF;
+    border: 1px solid #767575;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #545454;
+    cursor: pointer;
+}

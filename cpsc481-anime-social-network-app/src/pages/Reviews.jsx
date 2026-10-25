@@ -3,7 +3,7 @@ import VerticalBar from '../components/VerticalBar.jsx'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const Review = ({profilePicture, username, tag1, tag2, title, content, rating, numberOfLikes, datePosted, isRecommended}) => {
+const Review = ({profilePicture, username, tag1, tag2, title, content, rating, numberOfLikes, datePosted, isRecommended, ifReadReview}) => {
   return (
     <div className='review-item'>
       <div className='top-items'>
@@ -23,7 +23,7 @@ const Review = ({profilePicture, username, tag1, tag2, title, content, rating, n
         <p className='review-rating'>{rating}/10</p>
       </div>
       <p className='review-content'>{content}</p>
-      <button className='read-review-button'>Read Review</button>
+      <button className='read-review-button' onClick={ifReadReview}>Read Review</button>
       <div className='likes-and-comments'>
         <p>❤︎⁠ {numberOfLikes}</p>
       </div>
@@ -155,6 +155,7 @@ function App() {
           numberOfLikes={13}
           datePosted='2026-10-24'
           isRecommended={true}
+          ifReadReview={() => navigate('/read-review')}
           />
           <Review
           profilePicture='public\profile_pic.png'
