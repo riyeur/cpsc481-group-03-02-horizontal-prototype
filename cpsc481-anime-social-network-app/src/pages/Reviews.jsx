@@ -110,6 +110,19 @@ function App() {
             <option value='shoujo'>Shoujo</option>
             <option value='shounen'>Shounen</option>
           </select>
+          <select className='rating-select-reviews-page' defaultValue=''>
+            <option value='' disabled>Rating</option>
+            <option value='1'>1/10</option>
+            <option value='2'>2/10</option>
+            <option value='3'>3/10</option>
+            <option value='4'>4/10</option>
+            <option value='5'>5/10</option>
+            <option value='6'>6/10</option>
+            <option value='7'>7/10</option>
+            <option value='8'>8/10</option>
+            <option value='9'>9/10</option>
+            <option value='10'>10/10</option>
+          </select>
         </div>
         <div className='search-bar'>
           <input type='text' placeholder='Search' className='search-input'/>
