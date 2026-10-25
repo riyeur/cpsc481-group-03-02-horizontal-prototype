@@ -55,32 +55,37 @@ function App() {
     <div className='main-page'>
       <VerticalBar />
       <div className='align-translate-search'>
-        <select className='anime-select' defaultValue="">
-          <option value="" disabled>Anime</option>
-          <option value="aot">Attack on Titan</option>
-          <option value="jjk">Jujutsu Kaisen</option>
-          <option value="nana">Nana</option>
-          <option value="op">One Piece</option>
+        <select className='anime-select' defaultValue=''>
+          <option value='' disabled>Anime</option>
+          <option value='aot'>Attack on Titan</option>
+          <option value='jjk'>Jujutsu Kaisen</option>
+          <option value='nana'>Nana</option>
+          <option value='op'>One Piece</option>
         </select>
-        <select className='season-select' defaultValue="">
-          <option value="" disabled>Season</option>
-          <option value="1">Season 1</option>
-          <option value="2">Season 2</option>
-          <option value="3">Season 3</option>
+        <select className='season-select' defaultValue=''>
+          <option value='' disabled>Season</option>
+          <option value='1'>Season 1</option>
+          <option value='2'>Season 2</option>
+          <option value='3'>Season 3</option>
         </select>
-        <select className='episode-select' defaultValue="">
-          <option value="" disabled>Episode</option>
-          <option value="1">Episode 1</option>
-          <option value="2">Episode 2</option>
-          <option value="3">Episode 3</option>
-          <option value="4">Episode 4</option>
-          <option value="5">Episode 5</option>
+        <select className='episode-select' defaultValue=''>
+          <option value='' disabled>Episode</option>
+          <option value='1'>Episode 1</option>
+          <option value='2'>Episode 2</option>
+          <option value='3'>Episode 3</option>
+          <option value='4'>Episode 4</option>
+          <option value='5'>Episode 5</option>
         </select>
         <div className='search-bar'>
           <input type='text' placeholder='Search' className='search-input'/>
         </div>
         <div className='translate'>
-          <button className='translate-button'>Translate</button>
+          <select className='translate-button' defaultValue=''>
+            <option value='' disabled>Translate</option>
+            <option value='english'>English</option>
+            <option value='french'>French</option>
+            <option value='spanish'>Spanish</option>
+          </select>
         </div>
       </div>
       <div className='upper-tabs'>
