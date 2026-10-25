@@ -1,6 +1,7 @@
 import './App.css'
 import VerticalBar from './components/VerticalBar'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numberOfLikes, numberOfComments, datePosted}) => {
   return (
@@ -55,6 +56,7 @@ const Review = ({profilePicture, username, tag1, tag2, title, content, rating, n
 function App() {
   const [selectedAnime, setSelectedAnime] = useState('');
   const [selectedSeason, setSelectedSeason] = useState('');
+  const navigate = useNavigate()
 
   return (
     <div className='main-page'>
@@ -151,7 +153,7 @@ function App() {
         </div>
       </div>
       <div className='bottom-buttons'>
-        <button className='create-post-button'>Create Post</button>
+        <button className='create-post-button' onClick={() => navigate('/create-post')}>Create Post</button>
         <button className='create-review-button'>Create Review</button>
       </div>
     </div>
