@@ -1,5 +1,6 @@
 import './App.css'
 import VerticalBar from './components/VerticalBar'
+import { useState } from 'react'
 
 const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numberOfLikes, numberOfComments, datePosted}) => {
   return (
@@ -16,6 +17,7 @@ const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numbe
       </div>
       <p className='post-title'>{title}</p>
       <p className='post-content'>{content}</p>
+      <button className='view-post-button'>View Post</button>
       <div className='likes-and-comments'>
         <p>❤︎ {numberOfLikes}</p>
         <p>🗨 ⁠{numberOfComments}</p>
@@ -51,15 +53,44 @@ const Review = ({profilePicture, username, tag1, tag2, title, content, rating, n
 }
 
 function App() {
+  const [selectedAnime, setSelectedAnime] = useState('');
+  const [selectedSeason, setSelectedSeason] = useState('');
+
   return (
     <div className='main-page'>
       <VerticalBar />
       <div className='align-translate-search'>
+        <select className='anime-select' defaultValue='' value={selectedAnime} onChange={(e) => setSelectedAnime(e.target.value)}>
+          <option value='' disabled>Anime</option>
+          <option value='aot'>Attack on Titan</option>
+          <option value='jjk'>Jujutsu Kaisen</option>
+          <option value='nana'>Nana</option>
+          <option value='op'>One Piece</option>
+        </select>
+        <select className='season-select' defaultValue='' disabled={!selectedAnime} value={selectedSeason} onChange={(e) => setSelectedSeason(e.target.value)}>
+          <option value='' disabled>Season</option>
+          <option value='1'>Season 1</option>
+          <option value='2'>Season 2</option>
+          <option value='3'>Season 3</option>
+        </select>
+        <select className='episode-select' defaultValue='' disabled={!selectedSeason}>
+          <option value='' disabled>Episode</option>
+          <option value='1'>Episode 1</option>
+          <option value='2'>Episode 2</option>
+          <option value='3'>Episode 3</option>
+          <option value='4'>Episode 4</option>
+          <option value='5'>Episode 5</option>
+        </select>
         <div className='search-bar'>
           <input type='text' placeholder='Search' className='search-input'/>
         </div>
         <div className='translate'>
-          <button className='translate-button'>Translate</button>
+          <select className='translate-button' defaultValue=''>
+            <option value='' disabled>Translate</option>
+            <option value='english'>English</option>
+            <option value='french'>Français</option>
+            <option value='spanish'>Español</option>
+          </select>
         </div>
       </div>
       <div className='upper-tabs'>

@@ -7,6 +7,7 @@ function VerticalBar() {
                 <button className='vertical-bar-button'>Messaging</button>
                 <button className='vertical-bar-button'>Merch Collections</button>
                 <button className='vertical-bar-button'>Anime</button>
+                <button className='vertical-bar-button'>Notifications</button>
             </div>
             <div className='bottom-sections'>
                 <button className='vertical-bar-button'>Settings</button>
