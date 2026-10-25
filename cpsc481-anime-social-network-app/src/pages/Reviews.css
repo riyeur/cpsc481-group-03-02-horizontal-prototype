@@ -1,0 +1,279 @@
+.vertical-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  background-color: #ffffff;
+  border-left: 1px solid #767575;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.vertical-bar-button {
+  background-color: #FFFFFF;
+  border: 1px solid #767575;
+  border-radius: 13px;
+  padding: 10px 13px;
+  font-size: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.vertical-bar-button:hover {
+  background-color: #f5f5f5;
+}
+
+.main-page {
+  padding-right: 190px;
+  padding-bottom: 113px;
+}
+
+.main-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 30px;
+}
+
+.bottom-sections {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  gap: 13px;
+  padding: 15px 0;
+}
+
+.bottom-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-top: 1px solid #a5a5a5;
+  padding: 19px 0;
+  padding-bottom: 23px;
+  z-index: 10;
+}
+
+.reviews-review-page {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.align-translate-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  padding-top: 25px;
+  align-items: center;
+}
+
+.upper-tabs-reviews {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-input {
+  width: 50vw;
+  padding: 10px 15px;
+  border: 1px solid #6b6b6b;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  outline: none;
+}
+
+.translate-button {
+  background-color: #FFFFFF;
+  border: 1px solid #6b6b6b;
+  border-radius: 13px;
+  padding: 10px 5px;
+  font-size: 14px;
+}
+
+.upper-tabs-reviews {
+  margin-bottom: 25px;
+}
+
+.upper-buttons {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 10px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #545454;
+  cursor: pointer;
+}
+
+.top-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-items p {
+  margin-left: auto;
+}
+
+.review-title-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-item, .review-item {
+  border: 1px solid #595858;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.review-tag-review-page {
+  background-color: #FFFFFF;
+  color: #545454;
+  border: 1px solid #545454;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.review-list-review-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
+
+.upper-tabs-reviews {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #a5a5a5;
+  padding-bottom: 10px;
+}
+
+.post-title, .review-title {
+  font-size: 18px;
+  color: #656565;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.post-content, .review-content {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 5px 0 15px;
+}
+
+.likes-and-comments {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #353535;
+  margin-top: auto;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+.post-username, .review-username {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.date-posted {
+  font-size: 13px;
+  color: #4f4e4e;
+}
+
+.read-review-button, .view-post-button {
+  background-color: #FFFFFF;
+  border: 1px solid #4f4e4e;
+  color: #4f4e4e;
+  border-radius: 12px;
+  padding: 7px 13px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 17px;
+}
+
+.create-review-button-review-page {
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+  color: #4f4e4e;
+  border-radius: 14px;
+  padding: 11px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.review-rating {
+  border: 1px solid #999999;
+  padding: 5px 7px;
+  border-radius: 10px;
+}
+
+.upper-tabs-reviews button:nth-child(3) {
+  border-bottom: 2px solid #7c7c7c;
+}
+
+.anime-select, .season-select, .episode-select {
+  background-color: #FFFFFF;
+  border: 1px solid #767575;
+  color: #4f4e4e;
+  border-radius: 13px;
+  padding: 7px 1px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.anime-select:disabled {
+  background-color: #EAEAEA;
+  color: #999999;
+  border-color: #CCCCCC;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.tags-and-recommended {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.review-tags-review-page {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  min-width: 0;
+}
+
+.recommended-tag {
+  margin-left: auto;
+  flex-shrink: 0;
+  border: 1px solid #545454;
+  color: #545454;
+  border-radius: 20px;
+  padding: 1px 11px;
+  font-size: 13px;
+}
