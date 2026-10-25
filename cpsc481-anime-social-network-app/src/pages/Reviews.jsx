@@ -126,6 +126,7 @@ function App() {
         </div>
         <div className='search-bar'>
           <input type='text' placeholder='Search' className='search-input'/>
+          <button className='filter-button-reviews-page' type='button' aria-label='Open filters'>☰</button>
         </div>
         <div className='translate'>
           <select className='translate-button' defaultValue=''>
