@@ -65,30 +65,68 @@ function App() {
   return (
     <div className='main-page'>
       <VerticalBar />
-      <div className='align-translate-search'>
-        <select className='anime-select' defaultValue='' value={selectedAnime} onChange={(e) => setSelectedAnime(e.target.value)}>
-          <option value='' disabled>Anime</option>
-          <option value='aot'>Attack on Titan</option>
-          <option value='jjk'>Jujutsu Kaisen</option>
-          <option value='nana'>Nana</option>
-          <option value='op'>One Piece</option>
-        </select>
-        <select className='season-select' defaultValue='' disabled={!selectedAnime} value={selectedSeason} onChange={(e) => setSelectedSeason(e.target.value)}>
-          <option value='' disabled>Season</option>
-          <option value='1'>Season 1</option>
-          <option value='2'>Season 2</option>
-          <option value='3'>Season 3</option>
-        </select>
-        <select className='episode-select' defaultValue='' disabled={!selectedSeason}>
-          <option value='' disabled>Episode</option>
-          <option value='1'>Episode 1</option>
-          <option value='2'>Episode 2</option>
-          <option value='3'>Episode 3</option>
-          <option value='4'>Episode 4</option>
-          <option value='5'>Episode 5</option>
-        </select>
+      <div className='align-translate-search-reviews-page'>
+        <div className='review-tags-by-search-bar'>
+          <select className='anime-select-reviews-page' defaultValue='' value={selectedAnime} onChange={(e) => setSelectedAnime(e.target.value)}>
+            <option value='' disabled>Anime</option>
+            <option value='aot'>Attack on Titan</option>
+            <option value='jjk'>Jujutsu Kaisen</option>
+            <option value='nana'>Nana</option>
+            <option value='op'>One Piece</option>
+          </select>
+          <select className='season-select-reviews-page' defaultValue='' disabled={!selectedAnime} value={selectedSeason} onChange={(e) => setSelectedSeason(e.target.value)}>
+            <option value='' disabled>Season</option>
+            <option value='1'>Season 1</option>
+            <option value='2'>Season 2</option>
+            <option value='3'>Season 3</option>
+          </select>
+          <select className='episode-select-reviews-page' defaultValue='' disabled={!selectedSeason}>
+            <option value='' disabled>Episode</option>
+            <option value='1'>Episode 1</option>
+            <option value='2'>Episode 2</option>
+            <option value='3'>Episode 3</option>
+            <option value='4'>Episode 4</option>
+            <option value='5'>Episode 5</option>
+          </select>
+          <select className='genre-select-reviews-page' defaultValue=''>
+            <option value='' disabled>Genre</option>
+            <option value='action'>Action</option>
+            <option value='comedy'>Comedy</option>
+            <option value='fantasy'>Fantasy</option>
+            <option value='horror'>Horror</option>
+            <option value='mystery'>Mystery</option>
+            <option value='romance'>Romance</option>
+          </select>
+          <select className='age-group-select-reviews-page' defaultValue=''>
+            <option value='' disabled>Age Group</option>
+            <option value='06'>0 - 6</option>
+            <option value='711'>7 - 11</option>
+            <option value='1218'>12 - 18</option>
+            <option value='18+'>18+</option>
+          </select>
+          <select className='demographic-select-reviews-page' defaultValue=''>
+            <option value='' disabled>Demographic</option>
+            <option value='josei'>Josei</option>
+            <option value='shoujo'>Shoujo</option>
+            <option value='shounen'>Shounen</option>
+          </select>
+          <select className='rating-select-reviews-page' defaultValue=''>
+            <option value='' disabled>Rating</option>
+            <option value='1'>1/10</option>
+            <option value='2'>2/10</option>
+            <option value='3'>3/10</option>
+            <option value='4'>4/10</option>
+            <option value='5'>5/10</option>
+            <option value='6'>6/10</option>
+            <option value='7'>7/10</option>
+            <option value='8'>8/10</option>
+            <option value='9'>9/10</option>
+            <option value='10'>10/10</option>
+          </select>
+        </div>
         <div className='search-bar'>
           <input type='text' placeholder='Search' className='search-input'/>
+          <button className='filter-button-reviews-page' type='button' aria-label='Open filters'>☰</button>
         </div>
         <div className='translate'>
           <select className='translate-button' defaultValue=''>
