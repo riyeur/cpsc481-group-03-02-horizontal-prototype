@@ -100,10 +100,16 @@
 
 .translate-button {
   background-color: #FFFFFF;
+  color: #4f4e4e;
   border: 1px solid #6b6b6b;
   border-radius: 13px;
   padding: 10px 5px;
   font-size: 14px;
+}
+
+.translate-button option {
+  background-color: #FFFFFF;
+  color: #4f4e4e;
 }
 
 .upper-tabs {

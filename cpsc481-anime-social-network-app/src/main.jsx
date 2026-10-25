@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Reviews from './pages/Reviews.jsx'
 import CreatePost from './pages/CreatePost.jsx'
+import ViewPost from './pages/ViewPost.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/create-post" element={<CreatePost />} />
+        <Route path="/post" element={<ViewPost />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

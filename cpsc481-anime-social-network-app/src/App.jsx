@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numberOfLikes, numberOfComments, datePosted}) => {
+  const navigate = useNavigate();
   return (
     <div className='post-item'>
       <div className='top-items'>
@@ -18,7 +19,7 @@ const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numbe
       </div>
       <p className='post-title'>{title}</p>
       <p className='post-content'>{content}</p>
-      <button className='view-post-button'>View Post</button>
+      <button className='view-post-button' onClick={() => navigate('/post')}>View Post</button>
       <div className='likes-and-comments'>
         <p>❤︎ {numberOfLikes}</p>
         <p>🗨 ⁠{numberOfComments}</p>
