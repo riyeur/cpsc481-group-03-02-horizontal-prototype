@@ -1,6 +1,7 @@
 import './App.css'
 import VerticalBar from './components/VerticalBar'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numberOfLikes, numberOfComments, datePosted}) => {
   return (
@@ -26,7 +27,6 @@ const Post = ({profilePicture, username, tag1, tag2, tag3, title, content, numbe
   )
 }
 
-/* Add recommended part */
 const Review = ({profilePicture, username, tag1, tag2, title, content, rating, numberOfLikes, datePosted}) => {
   return (
     <div className='review-item'>
@@ -55,6 +55,8 @@ const Review = ({profilePicture, username, tag1, tag2, title, content, rating, n
 function App() {
   const [selectedAnime, setSelectedAnime] = useState('');
   const [selectedSeason, setSelectedSeason] = useState('');
+
+  const navigate = useNavigate();
 
   return (
     <div className='main-page'>
@@ -96,7 +98,7 @@ function App() {
       <div className='upper-tabs'>
         <button className='upper-buttons'>All</button>
         <button className='upper-buttons'>Posts</button>
-        <button className='upper-buttons'>Reviews and Recommendations</button>
+        <button className='upper-buttons' onClick={() => navigate('/reviews')}>Reviews and Recommendations</button>
       </div>
       <div className='posts-and-reviews'>
         <div className='post-list'>
