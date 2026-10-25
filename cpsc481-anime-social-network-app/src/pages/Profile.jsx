@@ -1,11 +1,7 @@
 import React from "react";
-import VerticalBar from '../components/VerticalBar'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
 import "./Profile.css";
 
 // Horizontal prototype: controls are visual examples.
-
 function Profile() {
   return (
     <>
