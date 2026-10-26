@@ -22,31 +22,6 @@ function ViewPost() {
           </select>
         </div>
 
-        <div className='view-post-search'>
-          <select className='anime-select' value={selectedAnime} onChange={(e) => setSelectedAnime(e.target.value)}>
-            <option value='' disabled>Anime</option>
-            <option value='aot'>Attack on Titan</option>
-            <option value='jjk'>Jujutsu Kaisen</option>
-            <option value='nana'>Nana</option>
-            <option value='op'>One Piece</option>
-          </select>
-          <select className='season-select' disabled={!selectedAnime} value={selectedSeason} onChange={(e) => setSelectedSeason(e.target.value)}>
-            <option value='' disabled>Season</option>
-            <option value='1'>Season 1</option>
-            <option value='2'>Season 2</option>
-            <option value='3'>Season 3</option>
-          </select>
-          <select className='episode-select' defaultValue='' disabled={!selectedSeason}>
-            <option value='' disabled>Episode</option>
-            <option value='1'>Episode 1</option>
-            <option value='2'>Episode 2</option>
-            <option value='3'>Episode 3</option>
-            <option value='4'>Episode 4</option>
-            <option value='5'>Episode 5</option>
-          </select>
-          <input type='text' placeholder='Search' className='search-input' />
-        </div>
-
         <div className='post-item'>
           <div className='top-items'>
             <img src='/profile_pic.png' alt='sean_1917' height='60' width='auto' />
